@@ -1,0 +1,66 @@
+--- sgmltools-lite-3.0.2/Makefile.in~	2004-10-12 03:55:31.695575848 +0200
++++ sgmltools-lite-3.0.2/Makefile.in	2004-10-12 03:55:31.697575544 +0200
+@@ -46,41 +46,41 @@
+ 
+ .PHONY: install
+ install: all
+-	-$(MKDIRHIER) $(bindir)
+-	-$(MKDIRHIER) $(etcdir)/catalog.d
+-	$(INSTALL_PROGRAM) bin/sgmltools $(bindir)/sgmltools
+-	$(INSTALL_PROGRAM) bin/buildcat $(bindir)/buildcat
+-	$(INSTALL_PROGRAM) bin/gensgmlenv $(bindir)/gensgmlenv
+-	$(INSTALL_PROGRAM) bin/sgmlwhich $(bindir)/sgmlwhich
+-	-umask 022;$(MKDIRHIER) $(stylesheets)
++	-$(MKDIRHIER) ${DESTDIR}/$(bindir)
++	-$(MKDIRHIER) ${DESTDIR}/$(etcdir)/catalog.d
++	$(INSTALL_PROGRAM) bin/sgmltools ${DESTDIR}/$(bindir)/sgmltools
++	$(INSTALL_PROGRAM) bin/buildcat ${DESTDIR}/$(bindir)/buildcat
++	$(INSTALL_PROGRAM) bin/gensgmlenv ${DESTDIR}/$(bindir)/gensgmlenv
++	$(INSTALL_PROGRAM) bin/sgmlwhich ${DESTDIR}/$(bindir)/sgmlwhich
++	-umask 022;$(MKDIRHIER) ${DESTDIR}/$(stylesheets)
+ 	  set -e; for i in dsssl/*.dsl dsssl/*.cat; do \
+-	    $(INSTALL_DATA) $$i $(stylesheets); \
++	    $(INSTALL_DATA) $$i ${DESTDIR}/$(stylesheets); \
+ 	  done;
+-	-umask 022;$(MKDIRHIER) $(dtds)
++	-umask 022;$(MKDIRHIER) ${DESTDIR}/$(dtds)
+ 	  set -e; for i in dtd/[a-z]*; do \
+-	    $(INSTALL_DATA) $$i $(dtds); \
++	    $(INSTALL_DATA) $$i ${DESTDIR}/$(dtds); \
+ 	  done;
+-	-umask 022;$(MKDIRHIER) $(mandir)/man1
+-	$(INSTALL_DATA) man/sgmltools.1 $(mandir)/man1
+-	-umask 022;$(MKDIRHIER) $(SHAREDIR)/misc/sgmltools/site-backends
+-	-umask 022;$(MKDIRHIER) $(SHAREDIR)/misc/sgmltools/python/backends
++	-umask 022;$(MKDIRHIER) ${DESTDIR}/$(mandir)/man1
++	$(INSTALL_DATA) man/sgmltools.1 ${DESTDIR}/$(mandir)/man1
++	-umask 022;$(MKDIRHIER) ${DESTDIR}/$(SHAREDIR)/misc/sgmltools/site-backends
++	-umask 022;$(MKDIRHIER) ${DESTDIR}/$(SHAREDIR)/misc/sgmltools/python/backends
+ 	  set -e; for i in python/*.py; do \
+-	    $(INSTALL_DATA) $$i $(SHAREDIR)/misc/sgmltools/python; \
++	    $(INSTALL_DATA) $$i ${DESTDIR}/$(SHAREDIR)/misc/sgmltools/python; \
+ 	  done
+ 	  set -e; for i in python/backends/*.py; do \
+-	    $(INSTALL_DATA) $$i $(SHAREDIR)/misc/sgmltools/python/backends; \
++	    $(INSTALL_DATA) $$i ${DESTDIR}/$(SHAREDIR)/misc/sgmltools/python/backends; \
+ 	  done; 
+-	-umask 022;$(MKDIRHIER) $(etcdir)
++	-umask 022;$(MKDIRHIER) ${DESTDIR}/$(etcdir)
+ 	set -e; for i in catalog.rh62 catalog.suse aliases; do \
+-	    if test -f $(etcdir)/$$i; then \
+-		$(INSTALL_DATA) $$i $(etcdir)/$$i.new; \
++	    if test -f ${DESTDIR}/$(etcdir)/$$i; then \
++		$(INSTALL_DATA) $$i ${DESTDIR}/$(etcdir)/$$i.new; \
+ 		echo "** Installed distributed $$i as $(etcdir)/$$i.new"; \
+ 	    else \
+-		$(INSTALL_DATA) $$i $(etcdir); \
++		$(INSTALL_DATA) $$i ${DESTDIR}/$(etcdir); \
+ 	    fi; \
+ 	done
+-	$(INSTALL_DATA) VERSION $(SHAREDIR)/misc/sgmltools
+-	#$(INSTALL_DATA) ../../../COPYING $(SHAREDIR)/misc/sgmltools
++	$(INSTALL_DATA) VERSION ${DESTDIR}/$(SHAREDIR)/misc/sgmltools
++	#$(INSTALL_DATA) ../../../COPYING ${DESTDIR}/$(SHAREDIR)/misc/sgmltools
+ 	@echo ""
+ 	@echo ""
+ 	@echo ""
