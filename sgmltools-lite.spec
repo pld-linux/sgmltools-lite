@@ -11,7 +11,7 @@ Release:	0.1
 License:	GPL
 Group:		Applications/Publishing/SGML
 Source0:	http://dl.sourceforge.net/sgmltools-lite/%{name}-%{version}.tar.gz
-# Source0-md5:	41187c94c4c112253543c50a834c223c
+# Source0-md5:	9f88d015eacf4c1be33711723b53ac43
 Source1:	sgml2info.1.pl
 Source2:	sgml2txt.1.pl
 Patch0:		%{name}-Makefile.in.patch
