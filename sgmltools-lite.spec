@@ -3,7 +3,7 @@ Summary:	A text formatting package based on SGML
 Summary(de):	Textformatierungssystem, das vom Linux Documentation Project benutzt wird
 Summary(fr):	Système de formattage de texte utilisé par le Linux Documentation Project
 Summary(nl):	Tekstformateringssysteem welke door het Linux Documentatie Project wordt gebruikt
-Summary(pl):	Narzêdzia konweruj±ce do linuxdoc-dtd
+Summary(pl):	Narzêdzia konwertuj±ce do linuxdoc-dtd
 Summary(tr):	GNU belge biçimlendirme sistemi
 Name:		sgmltools-lite
 Version:	3.0.2
