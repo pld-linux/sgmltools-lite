@@ -1,10 +1,10 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	A text formatting package based on SGML
-Summary(de.UTF-8):   Textformatierungssystem, das vom Linux Documentation Project benutzt wird
-Summary(fr.UTF-8):   Système de formattage de texte utilisé par le Linux Documentation Project
-Summary(nl.UTF-8):   Tekstformateringssysteem welke door het Linux Documentatie Project wordt gebruikt
-Summary(pl.UTF-8):   Narzędzia konwertujące do linuxdoc-dtd
-Summary(tr.UTF-8):   GNU belge biçimlendirme sistemi
+Summary(de.UTF-8):	Textformatierungssystem, das vom Linux Documentation Project benutzt wird
+Summary(fr.UTF-8):	Système de formattage de texte utilisé par le Linux Documentation Project
+Summary(nl.UTF-8):	Tekstformateringssysteem welke door het Linux Documentatie Project wordt gebruikt
+Summary(pl.UTF-8):	Narzędzia konwertujące do linuxdoc-dtd
+Summary(tr.UTF-8):	GNU belge biçimlendirme sistemi
 Name:		sgmltools-lite
 Version:	3.0.2
 Release:	0.1
@@ -68,7 +68,7 @@ mogelijk in: ASCII, DVI, HTML, LaTeX, PostScript en RTF (Windows help)
 
 %package dtd
 Summary:	linuxdoc DTD
-Summary(pl.UTF-8):   linuxdoc DTD
+Summary(pl.UTF-8):	linuxdoc DTD
 Group:		Applications/Publishing/SGML
 
 %description dtd
@@ -79,7 +79,7 @@ LinuxDoc DTD.
 
 %package -n sgmls
 Summary:	sgmls
-Summary(pl.UTF-8):   sgmls
+Summary(pl.UTF-8):	sgmls
 Version:	1.1
 Group:		Applications/Publishing/SGML
 
