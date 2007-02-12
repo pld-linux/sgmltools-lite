@@ -1,10 +1,10 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	A text formatting package based on SGML
-Summary(de):	Textformatierungssystem, das vom Linux Documentation Project benutzt wird
-Summary(fr):	Système de formattage de texte utilisé par le Linux Documentation Project
-Summary(nl):	Tekstformateringssysteem welke door het Linux Documentatie Project wordt gebruikt
-Summary(pl):	Narzêdzia konwertuj±ce do linuxdoc-dtd
-Summary(tr):	GNU belge biçimlendirme sistemi
+Summary(de.UTF-8):   Textformatierungssystem, das vom Linux Documentation Project benutzt wird
+Summary(fr.UTF-8):   SystÃ¨me de formattage de texte utilisÃ© par le Linux Documentation Project
+Summary(nl.UTF-8):   Tekstformateringssysteem welke door het Linux Documentatie Project wordt gebruikt
+Summary(pl.UTF-8):   NarzÄ™dzia konwertujÄ…ce do linuxdoc-dtd
+Summary(tr.UTF-8):   GNU belge biÃ§imlendirme sistemi
 Name:		sgmltools-lite
 Version:	3.0.2
 Release:	0.1
@@ -35,59 +35,59 @@ HTML, GNU info, LyX, RTF, plain text (via groff), and other format
 outputs from a single SGML source. SGMLtools is intended for writing
 technical software documentation.
 
-%description -l de
+%description -l de.UTF-8
 SGMLtools ist ein Textformatierer auf SGML-Basis, der eine Vielzahl
-von Ausgabeformaten erzeugen kann. Sie können aus einer einzigen
+von Ausgabeformaten erzeugen kann. Sie kÃ¶nnen aus einer einzigen
 SGML-Quelldatei PostScript-, dvi- (mit LaTeX), Nur-Text- (mit groff),
 HTML- und texinfo-Dateien erstellen.
 
-%description -l fr
-SGMLtools est un formatteur de texte basé sur SGML qui vous permet de
-produire de nombreux formats de fichiers de sortie. vous pouvez créer
+%description -l fr.UTF-8
+SGMLtools est un formatteur de texte basÃ© sur SGML qui vous permet de
+produire de nombreux formats de fichiers de sortie. vous pouvez crÃ©er
 du PostScript et du dvi (avec LaTeX), du texte simple (avec groff), du
 HTML, et des fichiers texinfo depuis un simple fichier SGML.
 
-%description -l pl
-SGMLtools jest bazuj±cym na SGML (a dok³adniej na LinuxDoc) pakietem
-s³u¿±cym do formatowania tekstu. Wchodz±ce w sk³ad pakietu narzêdzia
-pozwalaj± na wygenerowanie ze ¼ród³a w SGML dokumentów w formatach
-LaTeX, HTML, GNU info, LyX, RTF, tekstowym (przy u¿yciu groff-a).
-SGMLtools przeznaczone s± do pisania dokumentacji technicznej
+%description -l pl.UTF-8
+SGMLtools jest bazujÄ…cym na SGML (a dokÅ‚adniej na LinuxDoc) pakietem
+sÅ‚uÅ¼Ä…cym do formatowania tekstu. WchodzÄ…ce w skÅ‚ad pakietu narzÄ™dzia
+pozwalajÄ… na wygenerowanie ze ÅºrÃ³dÅ‚a w SGML dokumentÃ³w w formatach
+LaTeX, HTML, GNU info, LyX, RTF, tekstowym (przy uÅ¼yciu groff-a).
+SGMLtools przeznaczone sÄ… do pisania dokumentacji technicznej
 oprogramowania.
 
-%description -l tr
-SGMLtools, SGML tabanlý deðiþik biçimlerde çýktýlar üretmenizi
-saðlayan bir metin biçimleyicisidir. PostScript, dvi (LaTeX ile), düz
-metin (groff ile), HTML dosyalarýný tek bir SGML kaynak dosyasýndan
+%description -l tr.UTF-8
+SGMLtools, SGML tabanlÄ± deÄŸiÅŸik biÃ§imlerde Ã§Ä±ktÄ±lar Ã¼retmenizi
+saÄŸlayan bir metin biÃ§imleyicisidir. PostScript, dvi (LaTeX ile), dÃ¼z
+metin (groff ile), HTML dosyalarÄ±nÄ± tek bir SGML kaynak dosyasÄ±ndan
 yaratabilirsiniz.
 
-%description -l nl
+%description -l nl.UTF-8
 SGMLtools is een op SGML gebaseerd tekstverwerkingssyteem waarmee een
 aantal verschillende andere bestanden kan worden gemaakt. Uitvoer is
 mogelijk in: ASCII, DVI, HTML, LaTeX, PostScript en RTF (Windows help)
 
 %package dtd
 Summary:	linuxdoc DTD
-Summary(pl):	linuxdoc DTD
+Summary(pl.UTF-8):   linuxdoc DTD
 Group:		Applications/Publishing/SGML
 
 %description dtd
 LinuxDoc DTD.
 
-%description dtd -l pl
+%description dtd -l pl.UTF-8
 LinuxDoc DTD.
 
 %package -n sgmls
 Summary:	sgmls
-Summary(pl):	sgmls
+Summary(pl.UTF-8):   sgmls
 Version:	1.1
 Group:		Applications/Publishing/SGML
 
 %description -n sgmls
 sgmls - a validating SGML parser.
 
-%description -n sgmls -l pl
-sgmls - parser sprawdzaj±cy poprawno¶æ SGML.
+%description -n sgmls -l pl.UTF-8
+sgmls - parser sprawdzajÄ…cy poprawnoÅ›Ä‡ SGML.
 
 %prep
 %setup -q
