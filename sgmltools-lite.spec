@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.perl
 Summary:	A text formatting package based on SGML
 Summary(de.UTF-8):	Textformatierungssystem, das vom Linux Documentation Project benutzt wird
 Summary(fr.UTF-8):	Système de formattage de texte utilisé par le Linux Documentation Project
